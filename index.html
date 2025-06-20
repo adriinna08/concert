@@ -7,105 +7,156 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <div class="logo-text">Live BCN</div>
-            <img src=""
+  <header>
+      <div class="logo">
+          <div class="logo-text">Live BCN</div>
+
+      </div>
+      <nav>
+          <a href="#концерти">концерти</a>
+          <a href="#головна">головна</a>
+          <a href="#контакти">контакти</a>
+          <a href="#відгуки">відгуки</a>
+          <form id="searchForm" role="search">
+              <input class="form-control" type="search" placeholder="Пошук" aria-label="Search">
+              <button class="btn-search" type="submit">Знайти</button>
+          </form>
+      </nav>
+  </header>
+
+  <main>
+      <section class="hero-section">
+          <div class="hero-content">
+              <h1>Live BCN</h1>
+              <p>одна подія - тисячу емоцій</p>
+              <img src="https://img.freepik.com/foto-gratis/audiencia-emocionada-viendo-fuegos-artificiales-confeti-divirtiendose-festival-musica-noche-copiar-espacio_637285-559.jpg?semt=ais_hybrid&w=740">
+          </div>
+      </section>
+
+      <div class="container-card">
+          <div class="card">
+              <img src="fotos/73829d99dab891a362fbd91fc6d46a97.jpg" alt="Chase Atlantic Concert">
+              <h1>CHASE ATLANTIC</h1>
+              <p>14 JUNE</p>
+              <p>80EU</p>
+              <button>Buy</button>
+          </div>
+          <div class="card">
+              <img src="fotos/2024-11-25T103100.000Z1732530660-file.jpeg" alt="Lana Del Rey Concert">
+              <h1>LANA DEL REY</h1>
+              <p>22 JUNE</p>
+              <p>72EU</p>
+              <button>Buy</button>
+          </div>
+          <div class="card">
+              <img src="fotos/ff24089005955d3e980b13dba2f6b355.jpg" alt="Arctic monkeys Concert">
+              <h1>ARCTIC MONKEYS</h1>
+              <p>3 JULY</p>
+              <p>120EU</p>
+              <button>Buy</button>
+          </div>
+          <div class="card">
+              <img src="fotos/kanye-west.avif" alt="Kanye West Concert">
+              <h1>KANYE WEST</h1>
+              <p>15 JULY</p>
+              <p>100EU</p>
+              <button>Buy</button>
+          </div>
+      </div>
+
+      
+
+      <div class="slider">
+        <input type="radio" name="testimonial" id="t-1" />
+        <input type="radio" name="testimonial" id="t-2" />
+        <input type="radio" name="testimonial" id="t-3" checked />
+        <input type="radio" name="testimonial" id="t-4" />
+        <input type="radio" name="testimonial" id="t-5" />
+        <div class="testimonials mb-8">
+          <label class="item" for="t-1">
+            <div class="mycard">
+              <p class="cardtitle">Lee Hyunjin</p>
+              <div>
+                <img src="fotos/istockphoto-2169740304-612x612.jpg" alt="nivel5" class="cardimg" />
+              </div>
+              <div>
+                <p class="carddescription">We had a great time in the Jeniffer Lopez cocnert! Recommend to everyone</p>
+              </div>
+            </div>
+          </label>
+          <label class="item" for="t-2">
+            <div class="mycard">
+              <p class="cardtitle">Bella Dmitrischuk</p>
+              <div>
+                <img src="fotos/mujer-joven-hermosa-sueter-rosa-calido-aspecto-natural-sonriente-retrato-aislado-cabello-largo_285396-896.avif" alt="nivel5" class="cardimg" />
+              </div>
+              <div>
+                <p class="carddescription">The prices are affordable. All the payments went well and we enjoyed it a lot!p>
+              </div>
+            </div>
+          </label>
+          <label class="item" for="t-3">
+            <div class="mycard">
+              <p class="cardtitle">Lucas Hernandez</p>
+              <div>
+                <img src="fotos/young-bearded-man-with-striped-shirt_273609-5677.avif" alt="nivel5" class="cardimg" />
+              </div>
+              <div>
+                <p class="carddescription">Nothing special  about it</p>
+              </div>
+            </div>
+          </label>
+          <label class="item" for="t-4">
+            <div class="mycard">
+              <p class="cardtitle">Maria Sanchez</p>
+              <div>
+                <img src="fotos/retrato-mujer-joven-mirar-camara-juez_23-2148148118.avif" alt="nivel5" class="cardimg" />
+              </div>
+              <div>
+                <p class="carddescription">It was awesome, the concert was great and they even gave us a discount</p>
+              </div>
+            </div>
+          </label>
+
+        
+        <div class="dots">
+          <label for="t-1"></label>
+          <label for="t-2"></label>
+          <label for="t-3"></label>
+          <label for="t-4"></label>
+          <label for="t-5"></label>
         </div>
-
-        <nav>
-             <a href="концерти">концерти</a>
-             <a href="головна">головна </a>
-             <a href="контакти">контакти</a>
-             <a href="відгуки">відгуки</a>
-
-             <form id = "searchForm" class="d-flex" role="search"> 
-              <input class="form-control me-2" type="search" placeholder="Пошук" aria-label="Search">
-              <button class="btn btn-outline-secondary btn-search" type="submit"> Знайти</button>
-             </form>
-
-
-          <main> 
-            <section class="hero-section">
-                <div class="hero-content">
-            <h1> Live BCN</h1>
-            <p> одна подія-тисячу емоцій</p>
-
-        </div>
-        </section>
-
-        <div class="container-card" >
- <div class="card">
-    <img src="" alt>
-    <h1> CHASE ATLANTIC</h1>
-    <p>14 JUNE</p>
-    <p>80EU</p>
-   <button>Buy</button> 
- </div>
- <div class="card">
-    <img src="" alt>
-    <h1> LANA DEL REY </h1>
-    <p>22 JUNE</p>
-    <p>72EU</p>
-   <button>Buy</button> 
- </div>
- <div class="card">
-    <img src="" alt>
-    <h1> JENNIFER LOPEZ</h1>
-    <p>3 JULY</p>
-    <p>120EU</p>
-   <button>Buy</button> 
- </div>
- <div class="card">
-    <img src="" alt>
-    <h1> KANYE WEST</h1>
-    <p>15 JULY</p>
-    <p>100EU</p>
-   <button>Buy</button> 
- </div>
-        </div>
-            
-          </main>   
-     </nav>
-
-    </header>
-</body>
+      </div>
+  </main>
 
 
 <footer class="footer">
-  <div class="container">
-      <div class="row">
-          <div class="footer-col">
-              <h4>account</h4>
-             <ul>
-              <li> <a href="#">my account</a></li>
-              <li> <a href="#">order status</a></li>
-              <li> <a href="#">events </a></li>
-             
-             </ul> 
+      <div class="container">
+          <div class="row">
+              <div class="footer-col">
+                  <h4>account</h4>
+                  <ul>
+                      <li><a href="#">my account</a></li>
+                      <li><a href="#">order status</a></li>
+                      <li><a href="#">events</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>contact us</h4>
+                  <ul>
+                      <li><a href="#">email</a></li>
+                      <li><a href="#">phone number</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>legal</h4>
+                  <ul>
+                      <li><a href="#">terms</a></li>
+                      <li><a href="#">privacy</a></li>
+                  </ul>
+              </div>
           </div>
-          
-
-          <div class="footer-col">
-              <h4>contact us</h4>
-             <ul>
-              
-              <li> <a href="#">email</a></li>
-              <li> <a href="#">phone number</a></li>
-             
-             </ul> 
-          </div>
-          <div class="footer-col">
-            <h4>legal</h4>
-           <ul>
-            
-            <li> <a href="#">terms</a></li>
-            <li> <a href="#">privacy</a></li>
-           
-           </ul> 
-        </div>
-
-         
       </div>
-  </div> </footer>
+  </footer>
+</body>
 </html>
